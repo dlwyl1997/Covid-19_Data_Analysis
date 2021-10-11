@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="$MODULE_DIR$/covid19_data_analysis_platform" />
+        <option name="settingsModule" value="covid19_data_analysis_platform/settings.py" />
+        <option name="manageScript" value="manage.py" />
+        <option name="environment" value="&lt;map/&gt;" />
+        <option name="doNotUseTestRunner" value="false" />
+        <option name="trackFilePattern" value="" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/covid" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/covid/migrations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/covid19_data_analysis_platform" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/templates" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/covid19_data_analysis_platform/templates/covid" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (covid)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
     <option name="myDocStringFormat" value="Plain" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/covid19_data_analysis_platform/templates/covid" />
+      </list>
+    </option>
   </component>
 </module>
