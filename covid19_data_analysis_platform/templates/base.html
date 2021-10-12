@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A Data Analysis & Prediction Platform of COVID-19 Datasets Based on Machine Learning Algorithms">
+<meta name="keywords" content="Pixel">
+<meta name="author" content="Yulin Wang">
+<!-- Site Title   -->
+<title>
+    {% block title_block %}{% endblock %}
+</title>
+<!-- Bootstrap -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-dropdownhover.min.css' %}" rel="stylesheet">
+<!-- Fonts Awesome -->
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+<!-- animate Effect -->
+<link href="{% static 'css/animate.css' %}" rel="stylesheet">
+<!-- Main CSS -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- Responsive CSS -->
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+</head>
+<body>
+<header id="header" class="head">
+  <div class="top-header">
+     <div class="container">
+       <div class="row ">
+         <ul class="contact-detail2 col-md-6 pull-left">
+           <li> <a href="#" target="_blank"><i class="fa fa-mobile"></i>Call Us + 44 752 999 7299</a> </li>
+           <li> <a href="#" target="_blank"><i class="fa fa-envelope-o"></i> wangyulinchris@gmail.com</a> </li>
+         </ul>
+         <div class="social-links col-md-6 pull-right">
+           <ul class="social-icons pull-right">
+             <li> <a href="#" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+             <li> <a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+             <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+             <li> <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+{#             <li> <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a> </li>#}
+             <li> <a href="#" target="_blank"><i class="fa fa-skype"></i></a> </li>
+{#             <li> <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a> </li>#}
+           </ul>
+         </div>
+       </div>
+     </div>
+    </div>
+    <nav class="navbar navbar-default navbar-menu">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <div class="logo-text"><span><samp>C</samp>COVID-19</span> Data Platform</div>
+            <!-- <img src="{% static 'images/logo.png' %}" alt="logo"> -->
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'index' %}">Homepage</a></li>
+            <li><a href="{% url 'covid:analysis' %}">Analysis</a></li>
+            <li><a href="{% url 'covid:prediction' %}">Prediction</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'info' %}">Info</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+</header>
+
+{% block body_block %}
+
+{% endblock %}
+
+<section id="section8" class="mytestimonial">
+  <div class="container">
+    <div class="row">
+      <div data-ride="carousel" class="carousel slide" id="testimonial">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonial" data-slide-to="0" class="active"><img alt="Testimonial" class="img-responsive" src="{% static 'images/people/1.jpg' %}">
+          </li>
+          <li data-target="#testimonial" data-slide-to="1"><img alt="Testimonial" class="img-responsive" src="{% static 'images/people/2.jpg' %}">
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item text-center quotes-detail active left">
+            <p class="client-quote"><i class="fa fa-quote-left"></i>
+              But vaccines alone will not end this pandemic. We have many other tools to stop transmission and save lives: effective public health tools, and effective medical tools. We must use them all.
+            <i class="fa fa-quote-right "></i></p>
+            <h5 class="client-name">Dr Tedros Adhanom (Director-General of WHO)</h5>
+          </div>
+          <div class="item text-center quotes-detail next left">
+            <p class="client-quote"><i class="fa fa-quote-left "></i>
+              Once you've vaccinated you have a feeling of you're protected. It's difficult for people if they've never had a vaccine, but they ought to think about other people rather than themselves.
+            <i class="fa fa-quote-right "></i></p>
+            <h5 class="client-name">Queen Elizabeth II</h5>
+          </div>
+        </div> <!-- end carosel-inner -->
+      </div> <!-- end Quotes -->
+    </div>
+  </div>
+</section>
+<section id="section9" class="section-9-background">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/1.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/2.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/3.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/4.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/5.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+      <div class="col-md-2 col-sm-4 col-xs-6"><img src="{% static 'images/clients/6.png' %}" class="img-responsive wow fadeInUp" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section id="footer-top" class="footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>About Us</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+{#        <div class="footer-top-box">#}
+{#          <h4>Office Hour</h4>#}
+{#          <b>Mon-Fri :</b> 09am to 06pm<br/>#}
+{#          <b>Tues-Wed :</b> Special Appointment#}
+{#        </div>#}
+      </div>
+      <div class="col-md-3 col-lg-3">
+{#        <div class="footer-top-box">#}
+{#          <h4>About Us</h4>#}
+{#          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>#}
+{#        </div>#}
+        <div class="footer-top-box">
+          <h4>Office Hour</h4>
+          <b>Mon-Fri :</b> 09am to 06pm<br/>
+          <b>Tues-Wed :</b> Special Appointment
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>Latest Posts</h4>
+          <ul>
+            <li>
+              <div class="recent-post-widget">
+                <a href="#" class="widget-img-thumb">
+                  <img src="{% static 'images/post-1.jpg' %}" class="img-responsive">
+                </a>
+                <div class="widget-content">
+                  <h5><a href="#" class="sidebar-item-title">Enterprise Video Solutions</a></h5>
+                  <a href="#">
+                    <p class="widget-date">Posted: 3 day ago</p>
+                  </a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </li>
+            <li>
+              <div class="recent-post-widget">
+                <a href="#" class="widget-img-thumb">
+                  <img src="{% static 'images/post-2.jpg' %}" class="img-responsive">
+                </a>
+                <div class="widget-content">
+                  <h5><a href="#" class="sidebar-item-title">Medical Instruments</a></h5>
+                  <a href="#">
+                    <p class="widget-date">Posted: 6 month ago</p>
+                  </a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+{#      <div class="col-md-3 col-lg-3">#}
+{#        <div class="footer-top-box">#}
+{#          <h4>Tags</h4>#}
+{#          <div class="tag"><a href="#">Acupuncture</a></div>#}
+{#          <div class="tag"><a href="#">Mammography</a></div>#}
+{#          <div class="tag"><a href="#">Neonatology</a></div>#}
+{#          <div class="tag"><a href="#">Diabetes Education</a></div>#}
+{#          <div class="tag"><a href="#">Geriatrics</a></div>#}
+{#          <div class="tag"><a href="#">Kidneys</a></div>#}
+{#        </div>#}
+{#      </div>#}
+      <div class="col-md-3 col-lg-3">
+        <div class="footer-top-box">
+          <h4>Contact us</h4>
+          <p><b>Location : University of Glasgow,</b> Glasgow, UK<br/>
+            <b>Phone: </b> +44 7529997299<br/>
+            <b>Email: </b> wangyulinchris@gmail.com </p>
+        </div>
+{#        <div class="footer-top-box">#}
+{#          <h4>Subscribe</h4>#}
+{#          <div class="cs-form">#}
+{#            <form action="#" method="post">#}
+{#              <div class="input-holder">#}
+{#                <input type="email" placeholder="Enter Valid Email Address">#}
+{#                <label> <i class="fa fa-location-arrow fa-2x"></i>#}
+{#                  <input class="submit-bgcolor" type="submit" value="submit">#}
+{#                </label>#}
+{#              </div>#}
+{#            </form>#}
+{#          </div>#}
+{#        </div>#}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer-bottom" class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-9">
+{#        <div class="copyright">Copyright &copy; 2021.Company name All rights reserved.</div>#}
+      </div>
+      <div class="col-lg-3">
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.plugin.min.js' %}"></script>
+<script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-dropdownhover.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
