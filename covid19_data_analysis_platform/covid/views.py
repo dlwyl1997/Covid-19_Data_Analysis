@@ -22,3 +22,7 @@ def analysis(request):
 
 def prediction(request):
     return render(request, 'covid/prediction.html')
+
+
+def dataframe(request):
+    return render(request, 'covid/dataframe.html')

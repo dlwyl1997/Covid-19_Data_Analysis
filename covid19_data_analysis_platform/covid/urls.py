@@ -9,4 +9,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('analysis/', views.analysis, name='analysis'),
     path('prediction/', views.prediction, name='prediction'),
+    path('dataframe/', views.dataframe, name='dataframe'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
