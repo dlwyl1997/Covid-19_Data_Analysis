@@ -24,5 +24,5 @@ urlpatterns = [
     path('covid/', include('covid.urls')),
     path('admin/', admin.site.urls),
     path('about/', views.about, name='about'),
-    path('info/', views.info, name='info'),
+    # path('info/', views.info, name='info'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
