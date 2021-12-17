@@ -7,7 +7,7 @@ Homepage
 {% endblock %}
 
 {% block body_block %}
-<section id="slider" class="">
+<section id="slider" class="" xmlns="http://www.w3.org/1999/html">
   <!-- Carousel -->
   <div id="main-slide" class="carousel slide" data-ride="carousel">
 
@@ -24,9 +24,9 @@ Homepage
       <div class="item active" style="background-image:url({% static 'images/slide/1.jpg' %})">
             <div class="slider-content text-left">
                <div class="col-md-12">
-                   <h2 class="slide-title effect2">Latest Data Here</h2>
-                   <h3 class="slide-sub-title effect3">Latest Data Here</h3>
-                   <p class="slider-description lead effect3">Latest Data Here.</p>
+                   <h2 class="slide-title effect2">Latest COVID-19 Data Here</h2>
+                   <h3 class="slide-sub-title effect3">Latest Data</h3>
+                   <p class="slider-description lead effect3">Check the latest COVID-19 daily data here.<br>Dataset downloading is also available.</p>
                    <p class="effect3">
                     <a href="{% url 'covid:dataframe' %}" class="slider btn btn-primary">Check up Data</a>
                     <a href="https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university/download" class="slider btn btn-secondary">Download Data</a>
@@ -39,7 +39,7 @@ Homepage
       <div class="item" style="background-image:url({% static 'images/slide/2.jpg' %})">
             <div class="slider-content">
                <div class="col-md-12 text-center">
-                   <h2 class="slide-title effect4">Data Analysis</h2>
+                   <h2 class="slide-title effect4">Visualised Data Analysis Here</h2>
                    <h3 class="slide-sub-title effect5">Data Analysis</h3>
                    <p>
                     <a href="{% url 'covid:analysis' %}" class="slider btn btn-primary">Analysis</a>
@@ -52,9 +52,9 @@ Homepage
        <div class="item" style="background-image:url({% static 'images/slide/3.jpg' %})">
             <div class="slider-content text-right">
                <div class="col-md-12">
-                   <h2 class="slide-title effect6">Prediction</h2>
+                   <h2 class="slide-title effect6">Future Data Prediction Here</h2>
                    <h3 class="slide-sub-title effect7">Prediction</h3>
-                   <p class="slider-description lead effect7">Prediction Here.</p>
+                   <p class="slider-description lead effect7">Check the reasonable new cases predictions here.<br>See the possible trend in the next 10 days.</p>
                    <p>
                     <a href="{% url 'covid:prediction' %}" class="slider btn btn-primary">Prediction</a>
                     <a href="{% url 'about' %}" class="slider btn btn-primary border">Know More</a>
@@ -150,7 +150,7 @@ Homepage
       <div class="col-md-12">
         <header class="title-head">
           <h2>Some Tips Here</h2>
-          <p>Some tips here.</p>
+          <p>Some tips here to help you get rid of infection with COVID-19.</p>
           <div class="line-heading">
             <span class="line-left"></span>
             <span class="line-middle">+</span>
@@ -162,13 +162,13 @@ Homepage
         <ul class="section">
           <li class="left"><i class="fa fa-medkit"></i></li>
           <li><strong>Face Coverings</strong>
-          <p>Tip 1</p>
+          <p>Put on your face covering.<br>Cover your nose and mouth.</p>
           <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks" class="btn btn-primary btn-sm">Know More</a>
         </ul>
         <ul class="section two">
           <li class="left"><i class="fa fa-stethoscope"></i></li>
           <li><strong>Washing Hands</strong>
-            <p>Tip 2</p>
+            <p>Wash your hands frequently.<br>More than 20 seconds every time.</p>
             <a href="https://www.who.int/gpsc/5may/Hand_Hygiene_Why_How_and_When_Brochure.pdf" class="btn btn-primary btn-sm">Know More</a>
           </li>
         </ul>
@@ -179,14 +179,14 @@ Homepage
         <ul class="section three">
           <li class="left"><i class="fa fa-user-md"></i></li>
           <li><strong>Social Distance</strong>
-            <p>Tip 3</p>
+            <p>Keep social distance in public areas.<br>More than 1 meter is recommended.</p>
             <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19-small-public-gatherings" class="btn btn-primary btn-sm">Know More</a>
           </li>
         </ul>
         <ul class="section four">
           <li class="left"><i class="fa fa-unlink"></i></li>
           <li><strong>Getting Vaccinated</strong>
-            <p>Tip 4</p>
+            <p>Fully vaccinated can protect your health.<br>Get your booster if possible.</p>
             <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/advice" class="btn btn-primary btn-sm">Know More</a>
           </li>
         </ul>
